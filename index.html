@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Serkan Akin | MSc Thesis Research</title>
+  <meta name="description" content="MSc thesis research profile focused on spatio-temporal graph forecasting." />
+  <style>
+    :root {
+      --bg: #f5f3ef;
+      --ink: #1f2a37;
+      --muted: #5a6777;
+      --accent: #0f766e;
+      --accent-soft: #d9f1ee;
+      --card: #ffffff;
+      --line: #d7ddd7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      background: radial-gradient(circle at 10% 10%, #fff9ec 0, var(--bg) 60%);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 40px 20px 64px; }
+    .hero {
+      background: linear-gradient(135deg, #ffffff, #f1f7f6);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 34px;
+      box-shadow: 0 10px 30px rgba(31, 42, 55, 0.07);
+    }
+    h1 { margin: 0; font-size: clamp(2rem, 4.8vw, 3.2rem); letter-spacing: -0.03em; }
+    .tag { color: var(--accent); font-weight: 700; margin-top: 8px; }
+    .lead { max-width: 70ch; color: var(--muted); }
+    .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+    .btn {
+      text-decoration: none;
+      color: var(--ink);
+      background: var(--accent-soft);
+      border: 1px solid #b8ddd8;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+    h2 { margin-top: 38px; font-size: 1.35rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+    }
+    .card h3 { margin: 0 0 8px; font-size: 1rem; }
+    .card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+    footer { margin-top: 44px; color: var(--muted); font-size: 0.92rem; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Serkan Akin</h1>
+      <p class="tag">MSc Thesis Research · Spatio-Temporal Graph Forecasting</p>
+      <p class="lead">I am focused on one core direction: robust forecasting on graph-structured temporal data, with emphasis on reproducibility, rigorous evaluation, and research-grade engineering.</p>
+      <div class="links">
+        <a class="btn" href="https://github.com/sserkanakin/spatio-temporal-graph-forecasting-thesis">Thesis Repository</a>
+        <a class="btn" href="https://github.com/sserkanakin">GitHub Profile</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Current Focus</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Data and Pipeline Design</h3>
+          <p>Building consistent preprocessing and temporal graph construction workflows for reliable experiments.</p>
+        </article>
+        <article class="card">
+          <h3>Modeling and Baselines</h3>
+          <p>Comparing classical and deep forecasting baselines under controlled training and evaluation settings.</p>
+        </article>
+        <article class="card">
+          <h3>Evaluation and Analysis</h3>
+          <p>Systematic metric tracking, ablations, and error analysis to guide method improvements.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Supporting Repositories</h2>
+      <div class="grid">
+        <article class="card">
+          <h3><a href="https://github.com/sserkanakin/multimodal-understanding-reproduction-pipeline">multimodal-understanding-reproduction-pipeline</a></h3>
+          <p>Research pipeline for dataset preparation, fine-tuning, and benchmarking.</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/sserkanakin/paynt-heuristic-benchmarking">paynt-heuristic-benchmarking</a></h3>
+          <p>Heuristic benchmarking environment with reproducible Dockerized runs.</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/sserkanakin/cifar10-laplace-calibration-study">cifar10-laplace-calibration-study</a></h3>
+          <p>Controlled calibration experiments comparing MAP and Laplace behavior.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      Last updated March 2026.
+    </footer>
+  </main>
+</body>
+</html>
