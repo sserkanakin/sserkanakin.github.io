@@ -4,115 +4,149 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Serkan Akin | Research Portfolio</title>
-  <meta name="description" content="Research portfolio for Serkan Akin. Current MSc thesis project is in progress and not public yet." />
+  <meta name="description" content="MSc research portfolio focused on spatio-temporal graph forecasting, reproducible ML pipelines, and applied systems work." />
   <style>
     :root {
-      --bg: #f5f3ef;
-      --ink: #1f2a37;
-      --muted: #5a6777;
-      --accent: #0f766e;
-      --accent-soft: #d9f1ee;
-      --card: #ffffff;
-      --line: #d7ddd7;
+      --bg: #f2efe8;
+      --paper: #fffdf8;
+      --ink: #18212b;
+      --muted: #586472;
+      --accent: #0a7a6e;
+      --accent-2: #dff3ef;
+      --line: #d4ddd7;
+      --shadow: 0 14px 35px rgba(24, 33, 43, 0.08);
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: "Avenir Next", "Segoe UI", sans-serif;
-      background: radial-gradient(circle at 10% 10%, #fff9ec 0, var(--bg) 60%);
       color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 5%, #fff7df 0, transparent 32%),
+        radial-gradient(circle at 90% 0%, #e8f8f4 0, transparent 28%),
+        var(--bg);
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
       line-height: 1.6;
     }
-    .wrap { max-width: 980px; margin: 0 auto; padding: 40px 20px 64px; }
+    .wrap { max-width: 1060px; margin: 0 auto; padding: 30px 18px 70px; }
     .hero {
-      background: linear-gradient(135deg, #ffffff, #f1f7f6);
+      background: linear-gradient(145deg, #ffffff, #f5fbfa);
       border: 1px solid var(--line);
-      border-radius: 20px;
+      border-radius: 22px;
       padding: 34px;
-      box-shadow: 0 10px 30px rgba(31, 42, 55, 0.07);
+      box-shadow: var(--shadow);
     }
-    h1 { margin: 0; font-size: clamp(2rem, 4.8vw, 3.2rem); letter-spacing: -0.03em; }
-    .tag { color: var(--accent); font-weight: 700; margin-top: 8px; }
-    .lead { max-width: 70ch; color: var(--muted); }
-    .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
-    .btn {
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4.5vw, 3.3rem);
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+    .subtitle {
+      margin-top: 8px;
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .lead { max-width: 72ch; color: var(--muted); }
+    .bar { margin-top: 16px; display: flex; gap: 10px; flex-wrap: wrap; }
+    .pill {
+      display: inline-block;
       text-decoration: none;
       color: var(--ink);
-      background: var(--accent-soft);
-      border: 1px solid #b8ddd8;
-      padding: 8px 14px;
+      padding: 8px 13px;
+      border: 1px solid #b9ddd7;
       border-radius: 999px;
+      background: var(--accent-2);
       font-weight: 600;
+      font-size: 0.92rem;
     }
-    h2 { margin-top: 38px; font-size: 1.35rem; }
+    section { margin-top: 26px; }
+    h2 { margin: 0 0 12px; font-size: 1.3rem; }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 14px;
     }
     .card {
-      background: var(--card);
+      background: var(--paper);
       border: 1px solid var(--line);
       border-radius: 14px;
-      padding: 16px;
+      padding: 15px;
     }
     .card h3 { margin: 0 0 8px; font-size: 1rem; }
     .card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
-    footer { margin-top: 44px; color: var(--muted); font-size: 0.92rem; }
+    .stack { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip {
+      border: 1px solid #ccdad6;
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 0.85rem;
+      background: #fff;
+    }
+    .note {
+      background: #fff;
+      border: 1px dashed #becfc9;
+      border-radius: 12px;
+      padding: 12px;
+      color: var(--muted);
+    }
+    footer { margin-top: 30px; color: var(--muted); font-size: 0.92rem; }
   </style>
 </head>
 <body>
   <main class="wrap">
     <section class="hero">
       <h1>Serkan Akin</h1>
-      <p class="tag">MSc Research in Progress</p>
-      <p class="lead">My current thesis work is in progress and the repository is not public yet. This page highlights my available public technical work and research background.</p>
-      <div class="links">
-        <a class="btn" href="https://github.com/sserkanakin">GitHub Profile</a>
+      <p class="subtitle">MSc Research in Progress</p>
+      <p class="lead">My current thesis project in spatio-temporal graph forecasting is active and not public yet. This page highlights the strongest public work and the technical stack behind it.</p>
+      <div class="bar">
+        <a class="pill" href="https://github.com/sserkanakin">GitHub Profile</a>
+        <a class="pill" href="https://github.com/sserkanakin/sserkanakin">Profile README</a>
       </div>
     </section>
 
     <section>
-      <h2>Current Research Direction</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Spatio-Temporal Graph Forecasting</h3>
-          <p>Primary thesis direction with focus on robust forecasting for graph-structured temporal data.</p>
-        </article>
-        <article class="card">
-          <h3>Reproducibility</h3>
-          <p>Experiment tracking, controlled baselines, and transparent evaluation workflows.</p>
-        </article>
-        <article class="card">
-          <h3>Analysis</h3>
-          <p>Error analysis and ablations to guide model and pipeline improvements.</p>
-        </article>
+      <h2>Research Tech Stack</h2>
+      <div class="stack">
+        <span class="chip">Python</span>
+        <span class="chip">Jupyter</span>
+        <span class="chip">PyTorch Ecosystem</span>
+        <span class="chip">pandas</span>
+        <span class="chip">NumPy</span>
+        <span class="chip">Docker</span>
+        <span class="chip">TypeScript</span>
+        <span class="chip">Next.js</span>
+        <span class="chip">Tailwind CSS</span>
+        <span class="chip">Mininet</span>
       </div>
     </section>
 
     <section>
-      <h2>Public Repositories</h2>
+      <h2>What Has Been Delivered</h2>
       <div class="grid">
         <article class="card">
           <h3><a href="https://github.com/sserkanakin/multimodal-understanding-reproduction-pipeline">multimodal-understanding-reproduction-pipeline</a></h3>
-          <p>Research pipeline for dataset preparation, fine-tuning, and benchmarking.</p>
+          <p>Complete pipeline for data preparation, fine-tuning, and benchmarking in multi-image understanding tasks.</p>
         </article>
         <article class="card">
           <h3><a href="https://github.com/sserkanakin/paynt-heuristic-benchmarking">paynt-heuristic-benchmarking</a></h3>
-          <p>Heuristic benchmarking environment with reproducible Dockerized runs.</p>
+          <p>Reproducible heuristic benchmarking with Docker-based execution and analysis outputs.</p>
         </article>
         <article class="card">
           <h3><a href="https://github.com/sserkanakin/cifar10-laplace-calibration-study">cifar10-laplace-calibration-study</a></h3>
-          <p>Controlled calibration experiments comparing MAP and Laplace behavior.</p>
+          <p>Calibration-focused research study with controlled comparisons between MAP and Laplace.</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/sserkanakin/taut-website">taut-website</a></h3>
+          <p>Public-facing TypeScript web product demonstrating delivery discipline and polished UX.</p>
         </article>
       </div>
     </section>
 
     <section>
-      <h2>Archived Work</h2>
-      <div class="card">
-        <h3><a href="https://github.com/sserkanakin/bachelor-thesis-research-archive">bachelor-thesis-research-archive</a></h3>
-        <p>Older research repository from bachelor period.</p>
+      <h2>Visibility Policy</h2>
+      <div class="note">
+        Public repositories are curated for clarity and reuse. Private repositories are used for in-progress research, coursework drafts, and prototypes until they are ready.
       </div>
     </section>
 
